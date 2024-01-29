@@ -9,7 +9,7 @@ services:
                 USER_ID: '${WWWUSER:-1000}'
                 GROUP_ID: '${WWWGROUP:-1000}'
                 USER: '${USER:-whoami}'
-        container_name: php-without-framework
+        container_name: containerized-php
         restart: always
         working_dir: /var/www/app
         volumes:
