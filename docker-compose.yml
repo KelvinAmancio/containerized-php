@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+    php:
+        build:
+            dockerfile: Dockerfile
+            context: .
+            args:
+                USER_ID: '${WWWUSER:-1000}'
+                GROUP_ID: '${WWWGROUP:-1000}'
+                USER: '${USER:-whoami}'
+        container_name: php-without-framework
+        restart: always
+        working_dir: /var/www/app
+        volumes:
+            - .:/var/www/app
