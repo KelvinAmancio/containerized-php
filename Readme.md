@@ -1,4 +1,4 @@
-# NodeJS Puppeteer
+# Containerized PHP
 
 This PHP Docker image is based on PHP version 8.3 and contains composer and commom extensions such as PDO, Redis and Xdebug installed and configured.
 
